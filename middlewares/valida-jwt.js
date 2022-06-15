@@ -19,7 +19,7 @@ const validarJWT = async (req = request, res = response, next) => {
       /*const payload =  jwt.verify(token,process.env.SECRETORPRIVATEKEY);
       console.log(payload);*/
 
-      const {uid} = jwt.verify(token,process.env.SECRETORPRIVATEKEY);
+      const { uid } = jwt.verify(token,process.env.SECRETORPRIVATEKEY);
 
       //uid = ID de usuario que viaja en el payload del JWT
       const usuario = await Usuario.findById(uid);
