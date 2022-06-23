@@ -20,6 +20,7 @@ router.post('/google',[
     validarCampos
 ], googleSignin);
 
+//ROUTE REFRESH TOKEN
 router.post('/',validarJWT, renovarToken);
 
 module.exports = router;  

@@ -12,6 +12,43 @@
 </head>
 <body class="container">
     
+    <div class="row mt-5">
+
+        <div class="col-sm-6">
+            <h3>Enviar Mensaje</h3>
+            <hr>
+            <input type="text" 
+                   id="txtUid"
+                   class="form-control mb-2"
+                   placeholder="uid"
+                   autocomplete="off"
+            >
+
+            <input type="text" 
+                   id="txtMensaje"
+                   class="form-control mb-2"
+                   placeholder="Mensaje"
+                   autocomplete="off"
+            >
+            <h3>Usuario</h3>
+            <hr>
+            <ul id="ulUsuario">
+
+            </ul>
+        </div>
+
+        <div class="col-sm-6">
+            <h3>Chat Completo</h3>
+            <hr>
+            <ul id="ulMensajes">
+
+            </ul>
+        </div>
+    </div>
+
+    <button id="btnSalir" class="btn btn-outline-danger">
+        Logout
+    </button>
 
     <script src="https://apis.google.com/js/platform.js"></script>
     <script src="./socket.io/socket.io.js"></script>
